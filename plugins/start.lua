@@ -153,17 +153,17 @@ local action = function(msg, blocks, ln)
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'school1' then
-            local text = [[پایه تحصیلی* خود را انتخاب کنید*:]]
+            local text = 'پایه تحصیلی* خود را انتخاب کنید*:'
             local keyboard = do_keyboard_school1()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'school2' then
-            local text = [[پایه تحصیلی* خود را انتخاب کنید*:]]
+            local text = 'پایه تحصیلی* خود را انتخاب کنید*:'
             local keyboard = do_keyboard_school2()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 		if query == 'teach' then
-            local text = [[دوره تدریسی* خود را انتخاب کنید*:]]
+            local text = 'دوره تدریسی* خود را انتخاب کنید*:'
             local keyboard = do_keyboard_teach()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end

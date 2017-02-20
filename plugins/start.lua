@@ -33,6 +33,7 @@ local function do_keyboard_school2()
 	    {text = '🔙بازگشت', callback_data = '!school'}
  }      
     }
+		}
     return keyboard
 end
 local function do_keyboard_teach1()

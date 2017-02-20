@@ -78,10 +78,10 @@ local function do_keyboard_teach()
     keyboard.inline_keyboard = {
     	{
     		{text = 'دوره متوسطه اول', callback_data = '!teach1'},
-	    }
+	    },
 		{
     		{text = 'دوره متوسطه دوم', callback_data = '!teach2'},
-	    }
+	    },
     }
     return keyboard
 end

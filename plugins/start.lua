@@ -87,7 +87,7 @@ local function do_keyboard_private()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '📍دانش اموز📍', callback_data = '!school'},
+    		{text = '📍دانش اموز📍', callback_data = '!student'},
 	    },
 		{
 	        {text = '📍اموزگار📍', callback_data = '!teach'},

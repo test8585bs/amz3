@@ -149,32 +149,32 @@ local action = function(msg, blocks, ln)
         local text
         if query == 'school' then
             local text = '📍👋سلام!\nدوره تحصیلی خود را انتخاب کنید:'
-            local keyboard = do_keyboard_channel()
+            local keyboard = do_keyboard_school()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'school1' then
             local text = [[پایه تحصیلی* خود را انتخاب کنید*:]]
-            local keyboard = do_keyboard_robot()
+            local keyboard = do_keyboard_school1()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'school2' then
             local text = [[👋پایه تحصیلی* خود را انتخاب کنید*:]]
-            local keyboard = do_keyboard_cmds1()
+            local keyboard = do_keyboard_school2()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 		if query == 'teach' then
             local text = [[دوره تدریسی* خود را انتخاب کنید*:]]
-            local keyboard = do_keyboard_cmds2()
+            local keyboard = do_keyboard_teach()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 		if query == 'teach1' then
             local text = [[پایه تحصیلی* خود را انتخاب کنید*:]]
-            local keyboard = do_keyboard_shop()
+            local keyboard = do_keyboard_teach1()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 		if query == 'teach2' then
             local text = [[پایه تحصیلی* خود را انتخاب کنید*:]]
-            local keyboard = do_keyboard_commands()
+            local keyboard = do_keyboard_teach2()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'home' then

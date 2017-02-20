@@ -3,13 +3,13 @@ local function do_keyboard_school1()
     keyboard.inline_keyboard = {
 		{
     	{text = 'هفتم', callback_data = '!school7'},
-			}
+			},
 		{
     	{text = 'هشتم', callback_data = '!school8'},
-			}
+			},
 		{
     	{text = 'نهم', callback_data = '!school9'},
-			}
+			},
 	    {
 	    {text = '🔙', callback_data = '!home'}
         }

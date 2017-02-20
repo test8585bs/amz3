@@ -16,7 +16,7 @@ local function do_keyboard_school1()
     }
     return keyboard
 end
-local function do_keyboard_school2()
+local function do_keyboard_schools()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
@@ -54,7 +54,7 @@ local function do_keyboard_teach1()
     }
     return keyboard
 end
-local function do_keyboard_teach2()
+local function do_keyboard_teachs()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
@@ -68,7 +68,7 @@ local function do_keyboard_teach2()
 	    {text = 'دوازدهم', callback_data = '!teach12'},
  },      
 	    {
-	    {text = '🔙بازگشت', callback_data = '!teach'}
+	    {text = '🔙بازگشت', callback_data = '!teacher'}
  }      
     }
 		}
@@ -103,10 +103,10 @@ local function do_keyboard_teacher()
     		{text = 'دوره متوسطه اول', callback_data = '!teach1'},
 	    },
 		{
-    		{text = 'دوره متوسطه دوم', callback_data = '!teach2'},
+    		{text = 'دوره متوسطه دوم', callback_data = '!teachs'},
 	    },
 		{
-	    {text = '🔙', callback_data = '!home'},
+	    {text = '🔙back', callback_data = '!home'},
         }
     }
     return keyboard
@@ -118,7 +118,7 @@ local function do_keyboard_student()
     		{text = 'دوره متوسطه اول', callback_data = '!school1'},
 	    },
 {
-    		{text = 'دوره متوسطه دوم', callback_data = '!school2'},
+    		{text = 'دوره متوسطه دوم', callback_data = '!schools'},
 	    },
 		{
 	    {text = '🔙', callback_data = '!home'},
@@ -152,28 +152,28 @@ local action = function(msg, blocks, ln)
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'school1' then
-            local text = 'پایه تحصیلی* خود را انتخاب کنید*:'
+            local text = 'پایه تحصیلی خود را انتخاب کنید:'
             local keyboard = do_keyboard_school1()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
-if query == 'school2' then
-            local text = 'پایه تحصیلی* خود را انتخاب کنید*:'
-            local keyboard = do_keyboard_school2()
+if query == 'schools' then
+            local text = 'پایه تحصیلی خود را انتخاب کنید:'
+            local keyboard = do_keyboard_schools()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 		if query == 'teacher' then
-            local text = 'دوره تدریسی* خود را انتخاب کنید*:'
+            local text = 'دوره تدریسی خود را انتخاب کنید:'
             local keyboard = do_keyboard_teacher()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 		if query == 'teach1' then
-            local text = [[.]]
+            local text = [[پایه تحصیلی خود را انتخاب کنید]]
             local keyboard = do_keyboard_teach1()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
-		if query == 'teach2' then
-            local text = [[.]]
-            local keyboard = do_keyboard_teach2()
+		if query == 'teachs' then
+            local text = [[پایه تحصیلی خود را انتخاب کنید]]
+            local keyboard = do_keyboard_teachs()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'home' then
@@ -200,10 +200,10 @@ return {
 	    '^###cb:!(home)',
 	    '^###cb:!(teacher)',
 	    '^###cb:!(teach1)',
-	    '^###cb:!(teach2)',
+	    '^###cb:!(teachs)',
 	    '^###cb:!(student)',
 	    '^###cb:!(school1)',
-            '^###cb:!(school2)',
+            '^###cb:!(schools)',
 	    '^###cb:!(share)',
 
     }

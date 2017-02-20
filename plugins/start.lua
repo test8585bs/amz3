@@ -178,7 +178,7 @@ end
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'home' then
-            local text = [[📍شما به صفحه اول برگشتید📍
+            local text = [[📍شما به صفحه اول برگشتید
 📌یک دکمه را انتخاب کنید🔥
 ]]
             local keyboard = do_keyboard_private()

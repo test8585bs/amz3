@@ -168,12 +168,12 @@ end
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 		if query == 'teach1' then
-            local text = [[پایه تحصیلی* خود را انتخاب کنید*:]]
+            local text = [[.]]
             local keyboard = do_keyboard_teach1()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 		if query == 'teach2' then
-            local text = [[پایه تحصیلی* خود را انتخاب کنید*:]]
+            local text = [[.]]
             local keyboard = do_keyboard_teach2()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end

@@ -90,7 +90,7 @@ local function do_keyboard_private()
     		{text = '📍دانش اموز📍', callback_data = '!student'},
 	    },
 		{
-	        {text = '📍اموزگار📍', callback_data = '!teach'},
+	        {text = '📍اموزگار📍', callback_data = '!teacher'},
         },
         
     }

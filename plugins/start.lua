@@ -11,7 +11,7 @@ local function do_keyboard_school1()
     	{text = 'نهم', callback_data = '!school9'},
 			},
 	    {
-	    {text = '🔙', callback_data = '!home'}
+	    {text = '🔙', callback_data = '!school'}
         }
     }
     return keyboard
@@ -20,14 +20,17 @@ local function do_keyboard_school2()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
-    		    		{text = 'دستورات پرکاربرد کلی', callback_data = '!cmds1'},
-    		    		{text = 'اموزش های بیشتر', url = 'https://telegram.me/sphero_ch'},
-	    },
+    		    	{
+    	{text = 'دهم', callback_data = '!school10'},
+			},
+    		    		{
+    	{text = 'یازدهم', callback_data = '!school11'},
+			},
 		{
-	    {text = 'اموزش ادمین کردن در ربات', callback_data = '!cmds2'},
+	    {text = 'دوازدهم', callback_data = '!cmds12'},
  },      
 	    {
-	    {text = '🔙بازگشت', callback_data = '!robot'}
+	    {text = '🔙بازگشت', callback_data = '!school'}
  }      
     }
     return keyboard
@@ -35,9 +38,18 @@ end
 local function do_keyboard_teach1()
     local keyboard = {}
     keyboard.inline_keyboard = {
-{
-	    {text = '🔙بازگشت', callback_data = '!home'},
- }      
+	{
+    	{text = 'هفتم', callback_data = '!school7'},
+			},
+		{
+    	{text = 'هشتم', callback_data = '!school8'},
+			},
+		{
+    	{text = 'نهم', callback_data = '!school9'},
+			},
+	    {
+	    {text = '🔙', callback_data = '!teach'}
+        }
     }
     return keyboard
 end

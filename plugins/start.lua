@@ -147,9 +147,9 @@ local action = function(msg, blocks, ln)
         local query = blocks[1]
         local msg_id = msg.message_id
         local text
-        if query == 'school' then
+        if query == 'student' then
             local text = '📍👋سلام!\nدوره تحصیلی خود را انتخاب کنید:'
-            local keyboard = do_keyboard_school()
+            local keyboard = do_keyboard_student()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'school1' then

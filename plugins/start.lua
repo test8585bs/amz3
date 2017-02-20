@@ -68,7 +68,7 @@ local function do_keyboard_private()
 		{
 	        {text = '📍اموزگار📍', callback_data = '!teach'},
         },
-        }
+        
     }
     return keyboard
 end

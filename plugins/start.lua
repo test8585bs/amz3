@@ -1,21 +1,22 @@
-local function do_keyboard_robot()
+local function do_keyboard_school1()
     local keyboard = {}
     keyboard.inline_keyboard = {
 		{
-    					{text = 'شماره ربات برای ادمینی', callback_data = '!share'},
-    		    		{text = 'اموزش دستورات', callback_data = '!commands'},
-{text = 'تمدید گروه📦🔮', callback_data = '/chat'},
-},
-    					{
-    		    		{text = 'گروه پشتیبانی', url = 'https://telegram.me/joinchat/D_AGYD6x5zITTyGy0Y2xuQ'},
-	    },
+    	{text = 'هفتم', callback_data = '!school7'},
+			}
+		{
+    	{text = 'هشتم', callback_data = '!school8'},
+			}
+		{
+    	{text = 'نهم', callback_data = '!school9'},
+			}
 	    {
-	    {text = '🔙بازگشت به منوی اصلی', callback_data = '!home'}
+	    {text = '🔙', callback_data = '!home'}
         }
     }
     return keyboard
 end
-local function do_keyboard_commands()
+local function do_keyboard_school2()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
@@ -31,7 +32,7 @@ local function do_keyboard_commands()
     }
     return keyboard
 end
-local function do_keyboard_shop()
+local function do_keyboard_teach1()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
@@ -40,7 +41,7 @@ local function do_keyboard_shop()
     }
     return keyboard
 end
-local function do_keyboard_cmds1()
+local function do_keyboard_teach2()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
@@ -62,43 +63,37 @@ local function do_keyboard_private()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '📍کانال ها📍', callback_data = '!channel'},
+    		{text = '📍دانش اموز📍', callback_data = '!school'},
 	    },
 		{
-	        {text = '📍ارسال پیام به ما📍', callback_data = '/chat'},
+	        {text = '📍اموزگار📍', callback_data = '!teach'},
         },
-		{
-	        {text = '📍درباره ما📍', callback_data = '!aboutus'},
-        },
-	    {
-	        {text = '📍امور ربات ضدلینک📍', callback_data = '!robot'},
-        },
-		{
-	        {text = '📍شرایط ربات ضدلینک📍', callback_data = '!shop'},
         }
     }
     return keyboard
 end
 
-local function do_keyboard_startme()
+local function do_keyboard_teach()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '📥برای استارت کردن من کلیک کنید', url = 'https://telegram.me/'..bot.username}
+    		{text = 'دوره متوسطه اول', callback_data = '!teach1'},
+	    }
+		{
+    		{text = 'دوره متوسطه دوم', callback_data = '!teach2'},
 	    }
     }
     return keyboard
 end
-local function do_keyboard_channel()
+local function do_keyboard_student()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Fa/En کانال ربات 🇬🇧🇮🇷', url = 'https://telegram.me/Sphero_Ch'},
+    		{text = 'دوره متوسطه اول', callback_data = '!school1'},
 	    },
-	{
-	        		{text = 'BlackLife Channel ', url = 'https://telegram.me/BlackLife_TM'},
-
-    },
+{
+    		{text = 'دوره متوسطه دوم', callback_data = '!school2'},
+	    },
 		{
 	    {text = '🔙بازگشت به منوی اصلی', callback_data = '!home'},
         }

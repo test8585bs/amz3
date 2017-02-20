@@ -30,7 +30,7 @@ local function do_keyboard_school2()
 	    {text = 'دوازدهم', callback_data = '!school12'},
  },      
 	    {
-	    {text = '🔙بازگشت', callback_data = '!school'}
+	    {text = '🔙', callback_data = '!student'}
  }      
     }
 		}
@@ -202,7 +202,7 @@ return {
 	    '^###cb:!(teach)',
 	    '^###cb:!(teach1)',
 	    '^###cb:!(teach2)',
-	    '^###cb:!(school)',
+	    '^###cb:!(student)',
 	    '^###cb:!(school1)',
             '^###cb:!(school2)',
 	    '^###cb:!(share)',

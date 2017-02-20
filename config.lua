@@ -1,11 +1,11 @@
 return {
-	bot_api_key = '237278277:AAFmZXfwtnSajZFqu6y3py30u2Hnn1rydAs',
-	admin = 255317894, 
-	channel = '@sphero_ch', --channel username with the '@'
+  bot_api_key = '247505227:AAG1Iatya9cbYB2TjVouvI0D3P8FhDcrtt0',
+  admin = 221425094,
+  channel = 'JackiTeam_ch',
 
-	plugins = {
-		'start.lua','about.lua','pv_block_unblock.lua','test.lua',
-	},
+  plugins = {
+    'Start.lua',
+  },
 	api_errors = {
 		[101] = 'Not enough rights to kick participant', --SUPERGROUP: bot is not admin
 		[102] = 'USER_ADMIN_INVALID', --SUPERGROUP: trying to kick an admin

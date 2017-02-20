@@ -96,8 +96,7 @@ local function do_keyboard_private()
     }
     return keyboard
 end
-
-local function do_keyboard_teach()
+local function do_keyboard_teacher()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
@@ -162,9 +161,9 @@ if query == 'school2' then
             local keyboard = do_keyboard_school2()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
-		if query == 'teach' then
+		if query == 'teacher' then
             local text = 'دوره تدریسی* خود را انتخاب کنید*:'
-            local keyboard = do_keyboard_teach()
+            local keyboard = do_keyboard_teacher()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 		if query == 'teach1' then
@@ -199,7 +198,7 @@ return {
 	    '^/(help)$',
 	    '^/(ver)$',
 	    '^###cb:!(home)',
-	    '^###cb:!(teach)',
+	    '^###cb:!(teacher)',
 	    '^###cb:!(teach1)',
 	    '^###cb:!(teach2)',
 	    '^###cb:!(student)',

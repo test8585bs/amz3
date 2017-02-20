@@ -11,7 +11,7 @@ local function do_keyboard_school1()
     	{text = 'نهم', callback_data = '!school9'},
 			},
 	    {
-	    {text = '🔙', callback_data = '!school'}
+	    {text = '🔙', callback_data = '!student'}
         }
     }
     return keyboard

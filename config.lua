@@ -4,7 +4,7 @@ return {
   channel = 'JackiTeam_ch',
 
   plugins = {
-    'Start.lua',
+    'start.lua',
   },
 	api_errors = {
 		[101] = 'Not enough rights to kick participant', --SUPERGROUP: bot is not admin
